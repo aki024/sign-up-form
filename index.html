@@ -8,6 +8,9 @@
     <title>Sign up form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Mochiy+Pop+P+One&family=Nunito:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -16,29 +19,36 @@
 
 <body>
     <div class="flexContainer">
-        <div class="flexLeft"></div>
+        <div class="flexLeft">
+
+            <div class="leftLogo">
+                <div class="logo"><img src="odin-lined.png" alt="odinlogo"></div>
+                <div class="logoText">ODIN</div>
+            </div>
+
+        </div>
 
 
         <div class="flexRight">
             <div class="flexRightContain">
                 <div class="text">
-                    <p class="longText">This is not a real online service! You know you need something like This in your life to help you realize your deepest dreams.SIgn up now to get started.</p>
-
-                    <p class="shortText">You know you want to.</p>
+                    <p class="longText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                    <p class="signUp">Sign up <em>now</em> to get started.</p>
+                    <p class="shortText">You <em>know</em> you want to.</p>
                 </div>
                 <div class="form">
                     <h2>Let's do this!</h2>
                     <div class="formDiv">
 
                         <div class="formLeft">
-                            <form action="#" method="get"></form>
-                            <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email">
+                            <form action="#" method="post">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
 
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" required>
 
                         </div>
                         <div class="formRight">
@@ -52,11 +62,13 @@
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
                             <input type="password" id="confirmPassword">
                         </div>
-                        </form>
+
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="bottomButton"><button type="submit" class="myButton">Create Account</button> </div>
+                    <div class="bottomButton">
+                        <button type="submit" class="myButton">Create Account</button> </div>
+                    </form>
                     <div class="bottomText">Already have an account? <a>Log In</a></div>
 
                 </div>
