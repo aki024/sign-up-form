@@ -17,10 +17,6 @@
         flex-direction: row;
         height: 100vh;
     }
-    
-    div>div {
-        /* border: 1px solid red; */
-    }
     /*left side*/
     
     .flexLeft {
@@ -100,10 +96,6 @@
     .longText {
         margin-right: 150px;
     }
-    /* .textWrap {
-    display: flex;
-    flex-direction: column;
-} */
     /*Form - middle*/
     
     .form {
@@ -140,6 +132,12 @@
         color: rgb(153, 146, 146);
         border-radius: 5px;
     }
+    /*so that autofill doesnt mess up colors*/
+    
+    input:-webkit-autofill {
+        -webkit-text-fill-color: rgb(153, 146, 146) !important;
+        -webkit-box-shadow: 0 0 0 30px black inset !important;
+    }
     
     input:focus {
         outline: none;
@@ -153,10 +151,7 @@
         flex: 1;
     }
     
-    .bottomButton {
-        margin: 20px 30px;
-    }
-    
+    .bottomButton,
     .bottomText {
         margin: 20px 30px;
     }
@@ -196,4 +191,13 @@
     .myButton:active {
         position: relative;
         top: 1px;
+    }
+    
+    #password {
+        margin-bottom: 0px;
+    }
+    
+    #message {
+        display: block;
+        font-size: 12px;
     }
