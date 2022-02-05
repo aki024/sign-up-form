@@ -131,6 +131,7 @@
         border: 1px solid white;
         color: rgb(153, 146, 146);
         border-radius: 5px;
+        padding-left: 5px;
     }
     /*so that autofill doesnt mess up colors*/
     
@@ -163,6 +164,7 @@
     
     .bottomText>a:hover {
         cursor: pointer;
+        color: #e66ba4;
     }
     /*button*/
     
