@@ -1,0 +1,145 @@
+    @font-face {
+        font-family: NorseBold;
+        src: url(Norse-Bold.otf);
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {}
+    
+    div.flexContainer {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    div>div {
+        /* border: 1px solid red; */
+    }
+    /*left side*/
+    
+    .flexLeft {
+        background-image: url("/home/aki024/the_odin_project/sign-up-form/zak-7wBFsHWQDlk-unsplash.jpg");
+        background-size: cover;
+        flex: 1;
+        display: flex;
+    }
+    /*right side*/
+    
+    .flexRight {
+        flex-direction: column;
+        display: flex;
+        flex: 2;
+    }
+    
+    .flexRightContain {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    /*text part*/
+    
+    .text {
+        background-color: #000000;
+        font-size: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
+        color: white;
+    }
+    
+    .longText,
+    .shortText {
+        margin-left: 30px;
+    }
+    
+    .shortText {
+        margin-bottom: 30px;
+    }
+    
+    .longText {
+        margin-right: 150px;
+    }
+    /* .textWrap {
+    display: flex;
+    flex-direction: column;
+} */
+    /*Form - middle*/
+    
+    .form {
+        flex-direction: column;
+        flex: 1;
+        background-color: rgb(6, 6, 6);
+        color: white;
+    }
+    
+    .form>h2 {
+        margin: 20px 30px;
+    }
+    
+    label {
+        display: block;
+        font-size: small;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(87, 84, 84);
+        font-weight: 800;
+    }
+    
+    .formDiv {
+        display: flex;
+        gap: 50px;
+        margin: 20px 30px;
+    }
+    
+    input {
+        width: 20vw;
+        height: 4vh;
+        margin-bottom: 20px;
+    }
+    /* bottom style */
+    
+    .bottom {
+        background-color: #000000;
+        color: white;
+        flex: 1;
+    }
+    
+    .bottomButton {
+        margin: 20px 30px;
+    }
+    
+    .bottomText {
+        margin: 20px 30px;
+    }
+    /*button*/
+    
+    .myButton {
+        box-shadow: inset 0px 1px 0px 0px #fbafe3;
+        background-color: #000000;
+        border-radius: 8px;
+        border: 1px solid #ee1eb5;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 13px 36px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #c70067;
+    }
+    
+    .myButton:hover {
+        background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+        background-color: #ef027d;
+    }
+    
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
